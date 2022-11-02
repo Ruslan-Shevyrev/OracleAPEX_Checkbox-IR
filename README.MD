@@ -122,6 +122,10 @@ SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
 
 ***For Example: TestCheckBox***
 
+<p align="center">
+  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/4.%20OracleApex-Checkbox_IR.png" width="350" title="Type">
+</p>
+
 <table>
   <tr>
     <td valign="center" width="49%"><img src="https://github.com/Ruslan-Shevyrev/Ruslan-Shevyrev/blob/main/logoRS/logo_mini.gif" title="logo"></td>
