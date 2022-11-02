@@ -34,7 +34,7 @@ function checkedAllcheckboxOfReport(reportId, collection){
 	function addElementRecall(obj){
 
 		apex.server.process(
-			'add_element_collection', {
+			'ADD_ELEMENT_COLLECTION', {
 			x01: obj.documentID,
 			x02: obj.collection
 		}, {

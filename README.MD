@@ -142,6 +142,28 @@ SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
   <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/5.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
 </p>
 
+5. If you need **Select All** CheckBox
+
+<p align="center">
+  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/6.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
+</p>
+
+then add to **Heading** of your CheckBox Column
+
+```
+<input type="checkbox"></input>
+```
+
+and ***Disabele*** all the **Enable Users To**
+
+<p align="center">
+  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/7.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/7.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
+</p>
+
 <table>
   <tr>
     <td valign="center" width="49%"><img src="https://github.com/Ruslan-Shevyrev/Ruslan-Shevyrev/blob/main/logoRS/logo_mini.gif" title="logo"></td>
