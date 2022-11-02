@@ -154,7 +154,7 @@ then add to **Heading** of your CheckBox Column
 <input type="checkbox"></input>
 ```
 
-and ***Disabele*** all the **Enable Users To**
+and ***Disable*** all the **Enable Users To**
 
 <p align="center">
   <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/7.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
