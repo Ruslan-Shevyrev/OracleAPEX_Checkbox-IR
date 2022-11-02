@@ -76,7 +76,7 @@ END;
 
 ## How to use
 
-1. Create New ***Interactive Report*** with **APEX_ITEM.CHECKBOX** first column. 
+1. Create New ***Interactive Report*** with **APEX_ITEM.CHECKBOX** being first column. 
 
 :exclamation: ***CheckBox must be first column***
 
@@ -88,7 +88,7 @@ LEFT JOIN (SELECT n001 AS id
 				WHERE collection_name = 'YOUR_COLLECTION_NAME') c
 ```
 
-:exclamation: ***Change 'YOUR_COLLECTION_NAME' on your Collection Name***
+:exclamation: ***Change 'YOUR_COLLECTION_NAME' for your Collection Name***
 
 ***For Example:***
 
