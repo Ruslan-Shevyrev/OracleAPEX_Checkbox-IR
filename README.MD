@@ -80,15 +80,17 @@ END;
 
 1. Create New ***Interactive Report*** with **APEX_ITEM.CHECKBOX** first column. 
 
-:exclamation: **CheckBox must be first column***
+:exclamation: ***CheckBox must be first column***
 
 2. Connect your query with 
 
 ```
 LEFT JOIN (SELECT n001 AS id
 				FROM apex_collections
-				WHERE collection_name = 'TEST_COLLECTION_NAME') c
+				WHERE collection_name = 'YOUR_COLLECTION_NAME') c
 ```
+
+:exclamation: ***Change 'YOUR_COLLECTION_NAME' on your Collection Name***
 
 ***For Example:***
 
@@ -118,7 +120,7 @@ SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
   <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/3.%20OracleApex-Checkbox_IR.png" width="350" title="Type">
 </p>
 
-4. Add **Static id** for your report 
+4. Add **Static id** for your ***Interactive Report*** 
 
 ***For Example: TestCheckBox***
 
@@ -126,7 +128,7 @@ SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
   <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/4.%20OracleApex-Checkbox_IR.png" width="350" title="StaticId">
 </p>
 
-5. Add **JavaScript** ***Execute when Page Load*** for yor page:
+5. Add **JavaScript** ***Execute when Page Load*** for your page:
 
 ```
 	checkedAllcheckboxOfReport(reportId, collection);
@@ -151,7 +153,7 @@ SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
 then add to **Heading** of your CheckBox Column
 
 ```
-<input type="checkbox"></input>
+<input type="checkbox" class="checkAllReportCollection"></input>
 ```
 
 <p align="center">
