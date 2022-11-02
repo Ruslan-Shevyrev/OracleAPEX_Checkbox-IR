@@ -123,7 +123,7 @@ SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
 ***For Example: TestCheckBox***
 
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/4.%20OracleApex-Checkbox_IR.png" width="350" title="Type">
+  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/4.%20OracleApex-Checkbox_IR.png" width="350" title="StaticId">
 </p>
 
 5. Add **JavaScript** ***Execute when Page Load*** for yor page:
@@ -137,6 +137,10 @@ SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
 ```
 	checkedAllcheckboxOfReport(TestCheckBox, TEST_COLLECTION_NAME);
 ```
+
+<p align="center">
+  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/5.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
+</p>
 
 <table>
   <tr>
