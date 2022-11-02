@@ -135,7 +135,7 @@ SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
 ***For Example:***
 
 ```
-	checkedAllcheckboxOfReport(TestCheckBox, TEST_COLLECTION_NAME);
+	checkedAllcheckboxOfReport('TestCheckBox', 'TEST_COLLECTION_NAME');
 ```
 
 <p align="center">
