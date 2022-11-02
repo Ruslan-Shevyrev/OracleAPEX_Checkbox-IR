@@ -154,10 +154,14 @@ then add to **Heading** of your CheckBox Column
 <input type="checkbox"></input>
 ```
 
+<p align="center">
+  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/7.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
+</p>
+
 and ***Disable*** all the **Enable Users To**
 
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/7.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
+  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/8.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
 </p>
 
 <table>
