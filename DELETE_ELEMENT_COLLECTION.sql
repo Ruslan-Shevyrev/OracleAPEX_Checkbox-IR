@@ -7,10 +7,10 @@ BEGIN
         APEX_COLLECTION.DELETE_MEMBER (p_collection_name => apex_application.g_x02,
 									   p_seq             => c.SEQ_ID);
     END LOOP;
-    
+
 	htp.p('200');
-EXCEPTION WHEN OTHERS THEN  
+EXCEPTION WHEN OTHERS THEN
 	htp.p(SQLERRM);
     ROLLBACK;
-    htp.p('500');  
+    htp.p('500');
 END;
