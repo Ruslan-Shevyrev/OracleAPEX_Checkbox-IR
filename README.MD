@@ -9,6 +9,13 @@ Values of CheckBoxes are aded to ***APEX COLLECTIONS***.
 **OracleApex-Checkbox_IR.js**\
 to your application.
 
+2. Create Application Processes:
+
+**ADD_ELEMENT_COLLECTION**
+
+
+**DELETE_ELEMENT_COLLECTION**
+
 ## How to use
 
 <table>
