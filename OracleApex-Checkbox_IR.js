@@ -1,66 +1,43 @@
 function checkedAllcheckboxOfReport(reportId, collection){
-
-	document.querySelector('.a-IRR-container').addEventListener('click', function(e){
-
-		let allCheckbox = document.querySelectorAll('#' + reportId + ' tbody tr td:first-child input[type="checkbox"]');
-
-		if (e.target.type === 'checkbox' && e.target.closest('.a-IRR-header')){
-			
-			allCheckbox.forEach(function(inputCheckbox){
-
-				let obj = {
-					'documentID' : inputCheckbox.value,
-					'collection' : collection
-				};
-
-				if (e.target.checked){
-					inputCheckbox.setAttribute('checked', 'checked');
-					addElementRecall(obj);
-				} else {
-					inputCheckbox.removeAttribute('checked');
-					deleteElementRecall(obj);
-				};
-				
-				});
-		};
-	});
 	
-	function addElementRecall(obj) {
+	document.querySelector('#' + reportId).addEventListener('click', function (e){
+
+		if (e.target.type === 'checkbox' && e.target.closest('th')){
+
+			let allInputsCheckbox = this.querySelectorAll('tbody tr td:first-child input[type="checkbox"]');
+
+			for (let i = 0; i < allInputsCheckbox.length; i++) {
+				checkedCheckbox(allInputsCheckbox[i], e.target.checked);
+			}
+
+		} else if (e.target.type === 'checkbox' && e.target.closest('td')){
+			checkedCheckbox(e.target, e.target.checked);
+		}
+
+		function checkedCheckbox(inputCheckbox, isChecked) {
+
+			let obj = {
+				'documentID': inputCheckbox.value,
+				'collection': collection
+			}
+
+			if (isChecked) {
+				addElementRecall(obj);
+				inputCheckbox.checked = !0;
+			} else {
+				deleteElementRecall(obj);
+				inputCheckbox.checked = !!0;
+			}
+		}
+	});
+
+	function addElementRecall(obj){
 
 		apex.server.process(
 			'add_element_collection', {
-				x01: obj.documentID,
-				x02: obj.collection
-		},{
-			success: function (request) {
-				if (request == 200) {
-
-				} else {
-					apex.message.clearErrors();
-					apex.message.showErrors([{
-						type: "error",
-						location: "page",
-						message: request,
-						unsafe: false
-					}]);
-				}
-			},
-			error: function (pjqXHR, pTextStatus, pErrorThrown) {
-				console.log("error: " + pErrorThrown);
-			},
-			dataType: "text",
-			async: false
-		};
-		);
-	};
-
-	function deleteElementRecall(obj) {
-
-		apex.server.process(
-			'delete_element_collection', {
 			x01: obj.documentID,
 			x02: obj.collection
-		},{
+		}, {
 			success: function (request) {
 				if (request == 200) {
 
@@ -81,4 +58,32 @@ function checkedAllcheckboxOfReport(reportId, collection){
 			async: false
 		});
 	};
-};
+
+	function deleteElementRecall(obj) {
+
+		apex.server.process(
+			'delete_element_collection', {
+			x01: obj.documentID,
+			x02: obj.collection
+		}, {
+			success: function (request) {
+				if (request == 200) {
+
+				} else {
+					apex.message.clearErrors();
+					apex.message.showErrors([{
+						type: "error",
+						location: "page",
+						message: request,
+						unsafe: false
+					}]);
+				}
+			},
+			error: function (pjqXHR, pTextStatus, pErrorThrown) {
+				console.log("error: " + pErrorThrown);
+			},
+			dataType: "text",
+			async: false
+		});
+	};
+}
