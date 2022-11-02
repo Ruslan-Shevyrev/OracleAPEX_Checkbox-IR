@@ -14,4 +14,4 @@ SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
 				FROM apex_collections
 				WHERE collection_name = 'TEST_COLLECTION_NAME') c
     	ON t.id = c.id
-    ORDER BY t.ID
+    ORDER BY t.ID;
