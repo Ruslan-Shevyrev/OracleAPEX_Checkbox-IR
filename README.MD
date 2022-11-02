@@ -59,7 +59,7 @@ END;
 **Code:**
 ```
 BEGIN
-	FOR c IN (DELECT SEQ_ID
+	FOR c IN (SELECT SEQ_ID
 				FROM apex_collections
 				WHERE collection_name = apex_application.g_x02
 				AND n001 = apex_application.g_x01)
