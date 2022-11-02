@@ -120,7 +120,7 @@ SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
   <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/3.%20OracleApex-Checkbox_IR.png" width="350" title="Type">
 </p>
 
-4. Add **Static id** for your ***Interactive Report*** 
+4. Add **Static id** for your ***Interactive Report***
 
 ***For Example: TestCheckBox***
 
@@ -144,7 +144,7 @@ SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
   <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/5.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
 </p>
 
-5. If you need **Select All** CheckBox
+6. If you need **Select All** CheckBox In **Head** of your ***Interactive Report***
 
 <p align="center">
   <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/6.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
