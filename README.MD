@@ -80,6 +80,8 @@ END;
 
 1. Create New ***Interactive Report*** with **APEX_ITEM.CHECKBOX** first column. 
 
+:exclamation: **CheckBox must be first column***
+
 2. Connect your query with 
 
 ```
@@ -115,6 +117,10 @@ SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
 <p align="center">
   <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/3.%20OracleApex-Checkbox_IR.png" width="350" title="Type">
 </p>
+
+4. Add **Static id** for your report 
+
+***For Example: TestCheckBox***
 
 <table>
   <tr>
