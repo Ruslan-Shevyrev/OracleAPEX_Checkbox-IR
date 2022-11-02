@@ -160,10 +160,6 @@ and ***Disable*** all the **Enable Users To**
   <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/7.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
 </p>
 
-<p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/7.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
-</p>
-
 <table>
   <tr>
     <td valign="center" width="49%"><img src="https://github.com/Ruslan-Shevyrev/Ruslan-Shevyrev/blob/main/logoRS/logo_mini.gif" title="logo"></td>
