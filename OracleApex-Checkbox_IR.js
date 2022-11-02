@@ -27,25 +27,42 @@ function checkedAllcheckboxOfReport(reportId, collection) {
 			if (isChecked) {
 				addElementCollection(obj);
 				inputCheckbox.checked = !0;
+
+				let allBodyCheckbox = inputCheckbox.closest('table').querySelectorAll('td:first-child input[type="checkbox"]');
+				let isAllChecked = true;
+
+				for (let t = 0; t < allBodyCheckbox.length; t++) {
+
+					if (!allBodyCheckbox[t].checked) {
+
+						isAllChecked = false;
+
+					}
+				}	
+
+				if(isAllChecked) {
+
+					let arrAllHeaderCheckbox = document.querySelectorAll('.checkAllReportCollection');
+
+					for (let z = 0; z < arrAllHeaderCheckbox.length; z++) {
+						arrAllHeaderCheckbox[z].checked = !0;
+					}
+				}
+			
 			} else {
 				deleteElementCollection(obj);
 				inputCheckbox.checked = !!0;
 
-				var arrAllHeaderChecbox = document.querySelectorAll('.checkAllReportCollection');
+				let arrAllHeaderCheckbox = document.querySelectorAll('.checkAllReportCollection');
 
-				for (var z = 0; z < arrAllHeaderChecbox.length; z++) {
-					arrAllHeaderChecbox[z].checked = !!0;
-				}				
-					
+				for (let z = 0; z < arrAllHeaderCheckbox.length; z++) {
+					arrAllHeaderCheckbox[z].checked = !!0;
+				}		
 			}
-
 		}
-	
-
 	});
 
-
-	function addElementCollection(obj) {
+	function addElementCollection(obj){
 
 		apex.server.process(
 			'ADD_ELEMENT_COLLECTION', {
@@ -63,17 +80,15 @@ function checkedAllcheckboxOfReport(reportId, collection) {
 						message: request,
 						unsafe: false
 					}]);
-
 				}
 			},
-			error: function (pjqXHR, pTextStatus, pErrorThrown) {
-				alert("error: " + pErrorThrown);
+			error: function (pjqXHR, pTextStatus, pErrorThrown){
+				console.log("error: " + pErrorThrown);
 			},
 			dataType: "text",
 			async: false
-		}
-		);
-	}
+		});
+	};
 
 	function deleteElementCollection(obj) {
 
@@ -97,11 +112,10 @@ function checkedAllcheckboxOfReport(reportId, collection) {
 				}
 			},
 			error: function (pjqXHR, pTextStatus, pErrorThrown) {
-				alert("error: " + pErrorThrown);
+				console.log("error: " + pErrorThrown);
 			},
 			dataType: "text",
 			async: false
-		}
-		);
-	}
+		});
+	};
 }
