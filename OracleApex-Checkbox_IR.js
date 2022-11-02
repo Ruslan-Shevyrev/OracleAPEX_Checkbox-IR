@@ -1,17 +1,20 @@
-function checkedAllcheckboxOfReport(reportId, collection){
-	
-	document.querySelector('#' + reportId).addEventListener('click', function (e){
+function checkedAllcheckboxOfReport(reportId, collection) {
 
-		if (e.target.type === 'checkbox' && e.target.closest('th')){
+	document.querySelector('#' + reportId).addEventListener('click', function (e) {
+
+		if (e.target.type === 'checkbox' && e.target.closest('th')) {
 
 			let allInputsCheckbox = this.querySelectorAll('tbody tr td:first-child input[type="checkbox"]');
 
 			for (let i = 0; i < allInputsCheckbox.length; i++) {
+				
 				checkedCheckbox(allInputsCheckbox[i], e.target.checked);
-			}
+			}	
 
-		} else if (e.target.type === 'checkbox' && e.target.closest('td')){
+		} else if (e.target.type === 'checkbox' && e.target.closest('td')) {
+
 			checkedCheckbox(e.target, e.target.checked);
+
 		}
 
 		function checkedCheckbox(inputCheckbox, isChecked) {
@@ -22,16 +25,27 @@ function checkedAllcheckboxOfReport(reportId, collection){
 			}
 
 			if (isChecked) {
-				addElementRecall(obj);
+				addElementCollection(obj);
 				inputCheckbox.checked = !0;
 			} else {
-				deleteElementRecall(obj);
+				deleteElementCollection(obj);
 				inputCheckbox.checked = !!0;
+
+				var arrAllHeaderChecbox = document.querySelectorAll('.checkAllReportCollection');
+
+				for (var z = 0; z < arrAllHeaderChecbox.length; z++) {
+					arrAllHeaderChecbox[z].checked = !!0;
+				}				
+					
 			}
+
 		}
+	
+
 	});
 
-	function addElementRecall(obj){
+
+	function addElementCollection(obj) {
 
 		apex.server.process(
 			'ADD_ELEMENT_COLLECTION', {
@@ -49,20 +63,22 @@ function checkedAllcheckboxOfReport(reportId, collection){
 						message: request,
 						unsafe: false
 					}]);
+
 				}
 			},
 			error: function (pjqXHR, pTextStatus, pErrorThrown) {
-				console.log("error: " + pErrorThrown);
+				alert("error: " + pErrorThrown);
 			},
 			dataType: "text",
 			async: false
-		});
-	};
+		}
+		);
+	}
 
-	function deleteElementRecall(obj) {
+	function deleteElementCollection(obj) {
 
 		apex.server.process(
-			'delete_element_collection', {
+			'DELETE_ELEMENT_COLLECTION', {
 			x01: obj.documentID,
 			x02: obj.collection
 		}, {
@@ -77,13 +93,15 @@ function checkedAllcheckboxOfReport(reportId, collection){
 						message: request,
 						unsafe: false
 					}]);
+
 				}
 			},
 			error: function (pjqXHR, pTextStatus, pErrorThrown) {
-				console.log("error: " + pErrorThrown);
+				alert("error: " + pErrorThrown);
 			},
 			dataType: "text",
 			async: false
-		});
-	};
+		}
+		);
+	}
 }
