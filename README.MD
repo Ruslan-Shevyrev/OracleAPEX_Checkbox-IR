@@ -5,9 +5,9 @@ Values of CheckBoxes are aded to ***APEX COLLECTIONS***.
 
 ## Install
 
-1. Add\
+1. Add
 
-**OracleApex-Checkbox_IR.js**\
+**OracleApex-Checkbox_IR.js**
 
 to your application.
 
