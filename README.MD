@@ -169,7 +169,7 @@ and ***Disable*** all the **Enable Users To**
 </p>
 
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/Example-OracleApex-Checkbox_IR.gif" width="350" title="Example">
+  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/Example-OracleApex-Checkbox_IR.gif" width="700" title="Example">
 </p>
 
 <table>
