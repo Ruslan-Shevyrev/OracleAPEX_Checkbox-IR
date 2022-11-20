@@ -11,6 +11,6 @@ BEGIN
 	htp.p('200');
 EXCEPTION WHEN OTHERS THEN
 	htp.p(SQLERRM);
-    ROLLBACK;
-    htp.p('500');
+	ROLLBACK;
+	htp.p('500');
 END;
