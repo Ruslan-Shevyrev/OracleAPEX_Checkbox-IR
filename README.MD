@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/OracleApex-Checkbox_IR.gif" width="350" title="OracleApex-Checkbox_IR">
+	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/OracleApex-Checkbox_IR.gif" width="350" title="OracleApex-Checkbox_IR">
 </p>
 
 # OracleApex-Checkbox_IR
