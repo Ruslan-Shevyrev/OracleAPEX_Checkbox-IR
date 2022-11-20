@@ -16,7 +16,7 @@ Values of CheckBoxes are aded to ***APEX COLLECTIONS***.
 **ADD_ELEMENT_COLLECTION**
 
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/1.%20OracleApex-Checkbox_IR.png" width="350" title="ADD_ELEMENT_COLLECTION">
+	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/1.%20OracleApex-Checkbox_IR.png" width="350" title="ADD_ELEMENT_COLLECTION">
 </p>
 
 :exclamation: **Point:** ***"On Load: After Footer (page template footer)"***
@@ -24,9 +24,9 @@ Values of CheckBoxes are aded to ***APEX COLLECTIONS***.
 **Code:**
 ```
 BEGIN
-    IF apex_collection.collection_exists(apex_application.g_x02) <> TRUE THEN
+	IF apex_collection.collection_exists(apex_application.g_x02) <> TRUE THEN
 		apex_collection.create_collection(p_collection_name => apex_application.g_x02);
-    END IF;
+	END IF;
 
 	FOR c IN (SELECT SEQ_ID
 				FROM apex_collections
