@@ -45,15 +45,15 @@ BEGIN
 
 EXCEPTION WHEN OTHERS THEN
 	htp.p(SQLERRM);
-    ROLLBACK;
-    htp.p('500');
+	ROLLBACK;
+	htp.p('500');
 END;
 ```
 
 **DELETE_ELEMENT_COLLECTION**
 
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/2.%20OracleApex-Checkbox_IR.png" width="350" title="DELETE_ELEMENT_COLLECTION">
+	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/2.%20OracleApex-Checkbox_IR.png" width="350" title="DELETE_ELEMENT_COLLECTION">
 </p>
 
 :exclamation: **Point:** ***"On Load: After Footer (page template footer)"***
@@ -65,8 +65,8 @@ BEGIN
 				FROM apex_collections
 				WHERE collection_name = apex_application.g_x02
 				AND n001 = apex_application.g_x01)
-    LOOP
-        APEX_COLLECTION.DELETE_MEMBER (p_collection_name => apex_application.g_x02,
+	LOOP
+		APEX_COLLECTION.DELETE_MEMBER (p_collection_name => apex_application.g_x02,
 									   p_seq             => c.SEQ_ID);
     END LOOP;
 
