@@ -97,10 +97,10 @@ LEFT JOIN (SELECT n001 AS id
 ***For Example:***
 
 ```
-SELECT APEX_ITEM.CHECKBOX(p_idx  => 1,
-                 		p_value => t.ID,
-                 		p_item_id => t.ID,                  
-                 		p_attributes    => CASE WHEN c.id IS NOT NULL THEN 
+SELECT APEX_ITEM.CHECKBOX(p_idx			=> 1,
+						p_value			=> t.ID,
+						p_item_id		=> t.ID,
+						p_attributes    => CASE WHEN c.id IS NOT NULL THEN 
                  										'checked' 
                  									ELSE 
                  										NULL 
