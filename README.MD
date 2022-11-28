@@ -105,15 +105,15 @@ SELECT APEX_ITEM.CHECKBOX(p_idx			=> 1,
 											ELSE
 												NULL
 											END) AS check_box,
-    t.ID
-    FROM (SELECT LEVEL AS id 
-            FROM DUAL
-            CONNECT BY LEVEL <= 10) t
-    LEFT JOIN (SELECT n001 AS id
+	t.ID
+	FROM (SELECT LEVEL AS id
+			FROM DUAL
+			CONNECT BY LEVEL <= 10) t
+	LEFT JOIN (SELECT n001 AS id
 				FROM apex_collections
 				WHERE collection_name = 'TEST_COLLECTION_NAME') c
-    	ON t.id = c.id
-    ORDER BY t.ID
+		ON t.id = c.id
+	ORDER BY t.ID
 ```
 
 3. Change **Type** of CheckBox Column to ***Percent Graph***
