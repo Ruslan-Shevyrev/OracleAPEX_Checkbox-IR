@@ -119,7 +119,7 @@ SELECT APEX_ITEM.CHECKBOX(p_idx			=> 1,
 3. Change **Type** of CheckBox Column to ***Percent Graph***
 
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/3.%20OracleApex-Checkbox_IR.png" width="350" title="Type">
+	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/3.%20OracleApex-Checkbox_IR.png" width="350" title="Type">
 </p>
 
 4. Add **Static id** for your ***Interactive Report***
@@ -127,7 +127,7 @@ SELECT APEX_ITEM.CHECKBOX(p_idx			=> 1,
 ***For Example: TestCheckBox***
 
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/4.%20OracleApex-Checkbox_IR.png" width="350" title="StaticId">
+	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/4.%20OracleApex-Checkbox_IR.png" width="350" title="StaticId">
 </p>
 
 5. Add **JavaScript** ***Execute when Page Load*** for your page:
@@ -143,7 +143,7 @@ SELECT APEX_ITEM.CHECKBOX(p_idx			=> 1,
 ```
 
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/5.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
+	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/5.%20OracleApex-Checkbox_IR.png" width="350" title="JavaScript">
 </p>
 
 6. If you need **Select All** CheckBox In **Head** of your ***Interactive Report***
