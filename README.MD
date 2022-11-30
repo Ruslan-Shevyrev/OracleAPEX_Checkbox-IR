@@ -149,7 +149,7 @@ SELECT APEX_ITEM.CHECKBOX(p_idx			=> 1,
 6. If you need **Select All** CheckBox In **Head** of your ***Interactive Report***
 
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/6.%20OracleApex-Checkbox_IR.png" width="350" title="SelectAll">
+	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/6.%20OracleApex-Checkbox_IR.png" width="350" title="SelectAll">
 </p>
 
 then add to **Heading** of your CheckBox Column
@@ -159,17 +159,17 @@ then add to **Heading** of your CheckBox Column
 ```
 
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/7.%20OracleApex-Checkbox_IR.png" width="350" title="Heading">
+	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/7.%20OracleApex-Checkbox_IR.png" width="350" title="Heading">
 </p>
 
 and ***Disable*** all the **Enable Users To**
 
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/8.%20OracleApex-Checkbox_IR.png" width="350" title="EnableUsersTo">
+	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/8.%20OracleApex-Checkbox_IR.png" width="350" title="EnableUsersTo">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/Example-OracleApex-Checkbox_IR.gif" width="700" title="Example">
+	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/Example-OracleApex-Checkbox_IR.gif" width="700" title="Example">
 </p>
 
 <table>
