@@ -2,10 +2,10 @@ SELECT APEX_ITEM.CHECKBOX(p_idx			=> 1,
 						p_value			=> t.ID,
 						p_item_id		=> t.ID,
 						p_attributes	=> CASE WHEN c.id IS NOT NULL THEN
-                 										'checked' 
-                 									ELSE 
-                 										NULL 
-                 									END) AS check_box, 
+												'checked'
+											ELSE
+												NULL
+											END) AS check_box,
     t.ID
     FROM (SELECT LEVEL AS id 
             FROM DUAL
