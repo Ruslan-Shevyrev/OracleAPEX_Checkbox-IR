@@ -19,7 +19,7 @@ Values of CheckBoxes are aded to ***APEX COLLECTIONS***.
 	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/1.%20OracleApex-Checkbox_IR.png" width="350" title="ADD_ELEMENT_COLLECTION">
 </p>
 
-:exclamation: **Point:** ***"On Load: After Footer (page template footer)"***
+:exclamation: **Point:** ***"Ajax Callback: Run this application process when requested by a page process"***
 
 **Code:**
 ```
@@ -56,7 +56,7 @@ END;
 	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/2.%20OracleApex-Checkbox_IR.png" width="350" title="DELETE_ELEMENT_COLLECTION">
 </p>
 
-:exclamation: **Point:** ***"On Load: After Footer (page template footer)"***
+:exclamation: **Point:** ***"Ajax Callback: Run this application process when requested by a page process"***
 
 **Code:**
 ```
