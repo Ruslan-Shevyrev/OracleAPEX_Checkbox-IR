@@ -49,7 +49,7 @@ EXCEPTION WHEN OTHERS THEN
 	htp.p('500');
 END;
 ```
-
+ 
 **DELETE_ELEMENT_COLLECTION**
 
 <p align="center">
