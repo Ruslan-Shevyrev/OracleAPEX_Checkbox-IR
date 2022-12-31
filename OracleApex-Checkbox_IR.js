@@ -12,7 +12,7 @@ function checkedAllcheckboxOfReport(reportId, collection) {
 			}	
 
 		} else if (e.target.type === 'checkbox' && e.target.closest('td')) {
-
+ 
 			checkedCheckbox(e.target, e.target.checked);
 
 		}
