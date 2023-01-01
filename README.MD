@@ -8,7 +8,7 @@ It adds CheckBox to ***Oracle APEX Interactive Report***.\
 Values of CheckBoxes are aded to ***APEX COLLECTIONS***.
 
 ## Install
- 
+
 1. Add **OracleApex-Checkbox_IR.js** to your application.
 
 2. Create Application Processes:
