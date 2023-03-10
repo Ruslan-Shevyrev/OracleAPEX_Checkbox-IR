@@ -2,7 +2,7 @@
 	<img src="https://github.com/Ruslan-Shevyrev/MediaFilesToGitHub/blob/master/OracleApex-Checkbox_IR/media/OracleApex-Checkbox_IR.gif" width="350" title="OracleApex-Checkbox_IR">
 </p>
 
-# OracleApex-Checkbox_IR
+# OracleAPEX_Checkbox-IR
 
 It adds CheckBox to ***Oracle APEX Interactive Report***.\
 Values of CheckBoxes are aded to ***APEX COLLECTIONS***.
